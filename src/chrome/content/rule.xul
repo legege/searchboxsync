@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/"?>
+
+<!DOCTYPE window [
+<!ENTITY % brandDTD SYSTEM "chrome://global/locale/brand.dtd" >
+%brandDTD;
+<!ENTITY % prefDTD SYSTEM "chrome://searchboxsync/locale/searchboxsync.dtd" >
+%prefDTD;
+]>
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="searchboxsyncRule"
+  title="&rule.title;" onload="gSearchBoxSyncRule.onLoad();"
+  ondialogaccept="return gSearchBoxSyncRule.onAccept();"
+  ondialoghelp="gSearchBoxSyncRule.onHelp();"
+  buttons="accept, cancel, help"
+  flex="1">
+
+  <script type="application/x-javascript" src="chrome://searchboxsync/content/global.js" />
+  <script type="application/x-javascript" src="chrome://searchboxsync/content/rule.js" />
+  <script type="application/x-javascript" src="chrome://searchboxsync/content/ecl.js" />
+
+  <stringbundle id="bundle_searchboxsync" src="chrome://searchboxsync/locale/searchboxsync.properties"/>
+
+  <groupbox>
+    <caption>
+      <label value="&rule.settings.label;" />
+    </caption>
+
+    <grid>
+      <columns>
+        <column />
+        <column flex="1" />
+      </columns>
+      <rows>
+        <row align="center">
+          <label control="name" value="&rule.name.label;" />
+          <textbox id="name" />
+        </row>
+        <row align="center">
+          <label control="name" value="&rule.type.label;" />
+          <radiogroup id="type" flex="1"
+                      oncommand="gSearchBoxSyncRule.onTypeSelect();"
+                      orient="horizontal">
+            <radio id="simpleRule" label="&rule.type.simple.label;" value="simple" />
+            <radio id="regexRule" label="&rule.type.regex.label;" value="regex" />
+          </radiogroup>
+        </row>
+      </rows>
+    </grid>
+
+    <checkbox id="disabledCheckbox" label="&rule.disabled.label;" />
+  </groupbox>
+
+  <groupbox style="min-width: 420px;">
+    <caption>
+      <label value="&rule.ruleDefinition.label;" />
+    </caption>
+
+    <grid id="simpleDefinition" hidefor="regex">
+      <columns>
+        <column />
+        <column flex="1" />
+      </columns>
+      <rows>
+        <row align="center">
+          <label control="simpleUrl" value="&rule.simpleUrl.label;" />
+          <textbox id="simpleUrl" flex="1" />
+        </row>
+        <row align="center">
+          <label control="simpleParameter" value="&rule.simpleParameter.label;" />
+          <textbox id="simpleParameter" flex="1" />
+        </row>
+      </rows>
+    </grid>
+
+    <grid id="regexDefinition" hidefor="simple">
+      <columns>
+        <column />
+        <column flex="1" />
+      </columns>
+      <rows>
+        <row align="center">
+          <label control="regexUrl" value="&rule.regexUrl.label;" />
+          <textbox id="regexUrl" flex="1" />
+        </row>
+      </rows>
+    </grid>
+
+    <separator />
+
+    <hbox align="center" flex="1">
+      <label control="testUrl" value="&rule.testUrl.label;" />
+      <textbox id="testUrl" flex="1" />
+      <button label="&rule.test.label;"  accesskey="&rule.test.accesskey;"
+              oncommand="gSearchBoxSyncRule.testRule();" />
+    </hbox>
+  </groupbox>
+
+</dialog>
