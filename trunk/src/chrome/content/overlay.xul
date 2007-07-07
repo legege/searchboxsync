@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<overlay id="searchboxsyncOverlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="bundle_searchboxsync" src="chrome://searchboxsync/locale/searchboxsync.properties" />
+  </stringbundleset>
+
+  <script type="application/x-javascript" src="chrome://searchboxsync/content/global.js" />
+  <script type="application/x-javascript" src="chrome://searchboxsync/content/overlay.js" />
+  <script type="application/x-javascript" src="chrome://searchboxsync/content/ecl.js" />
+
+</overlay>
