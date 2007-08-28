@@ -90,7 +90,7 @@ var gSearchBoxSyncUtil = {
 
     var urlExpression = new RegExp(aUrlRegex, 'i');
     var terms = "";
-	var encodetype = "";
+    var encodetype = "";
 
     // Test to see if the URL matches the given pattern
     if (urlExpression.test(aUrl)) {
