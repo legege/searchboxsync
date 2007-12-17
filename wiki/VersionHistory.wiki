@@ -17,7 +17,7 @@
 
 == !SearchBox Sync 0.3.7 (Mar. 3rd, 2006) ==
 
- * Added: SearchBox Sync has now an icon in the Extension Manager.
+ * Added: !SearchBox Sync has now an icon in the Extension Manager.
  * New translations: Portuguese, Chinese (Taiwan)
 
 == !SearchBox Sync 0.3.6 (Jan. 24th, 2006) ==
