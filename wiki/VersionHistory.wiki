@@ -1,4 +1,5 @@
 #summary Change Log
+#labels Featured
 
 == !SearchBox Sync 0.4.2 (November 23rd, 2006) ==
 
