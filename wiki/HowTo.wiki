@@ -1,0 +1,39 @@
+#summary FAQ
+
+= FAQ =
+
+ * *How to see what does this add-on do?*
+  Install the add-on and then try to [http://www.google.com/search?q=Mozilla search something] with [http://www.google.com Google]. The content of the searchbox in the toolbar will change accordingly.
+
+ * *How to add a custom synchronization rule?*
+  # Open the Add-ons Manager (Tools &gt; Add-ons)
+  # Double-click on !SearchBox Sync.
+  # Click on "Add...".
+  # Complete all fields.
+    * If you choose the rule type "Simple", you have to provide the beginning of the address and the parameter's name in the address where to get the keywords.
+    * If you choose the rule type "Regular Expression", you have to provide a valid regular expression. The last _group_ of the expression will determine the terms to be extracted in the address.
+  # It's recommanded to test the rule before to add it.
+
+ * *Can I disable/delete a default synchronization rule?*
+  Yes you can.
+
+ * *A default synchronization rule doesn't work, why?*
+  Well, it might be an unpredicted case. Please [http://legege.com/contact contact me].
+
+= Custom Rules Suggestions =
+
+|| Name || [http://a9.com/ A9] ||
+|| Type || Regular Expression ||
+|| Definition || URL Regex: {{{^http://a9\.com/([^&/?]*)[^/]*$}}} ||
+
+|| Name || [http://lxr.mozilla.org/ Mozilla Cross Reference (LXR)] ||
+|| Type || Regular Expression ||
+|| Definition || URL Regex: {{{^http://lxr\.mozilla\.org/[^/]+/[^?]+\?((string)|i)=([^&]+)}}} ||
+
+|| Name || [http://www.wordreference.com/ WordReference.com] ||
+|| Type || Regular Expression ||
+|| Definition || URL Regex: {{{^http://www\.wordreference\.com/.{2}/translation\.asp\?tranword=(.*)&.*$)}}} ||
+
+|| Name || [http://www.everyclick.co.uk/ everyclick]  (by John Pratt, not tested) ||
+|| Type || Regular Expression ||
+|| Definition || URL Regex: {{{^http://[^.]*.everyclick\..*/[^(?|/)]*\?(.*&)?(as_)?keyword=([^&]+)}}} ||
