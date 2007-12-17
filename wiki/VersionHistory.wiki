@@ -1,0 +1,96 @@
+#summary Change Log
+
+== SearchBox Sync 0.4.2 (November 23rd, 2006) ==
+
+ * Added: Encoding EUC, JIS, Shift JIS, JIS-7bit and JIS-8bit are now supported (Thanks to Fuku)
+ * Added: The character %252B is now converted to a space
+
+== SearchBox Sync 0.4.1 (June 18th, 2006) ==
+
+ * Added: A new default rule has been added: "Firefox Keyword Search".
+ * Fixed: The focus is lost when moving up or down a rule.
+
+== SearchBox Sync 0.4 (June 17th, 2006) ==
+
+ * Improved: This version is compatible with Firefox 2.0.
+ * New translation: Dutch
+
+== SearchBox Sync 0.3.7 (Mar. 3rd, 2006) ==
+
+ * Added: SearchBox Sync has now an icon in the Extension Manager.
+ * New translations: Portuguese, Chinese (Taiwan)
+
+== SearchBox Sync 0.3.6 (Jan. 24th, 2006) ==
+
+ * This version is compatible with Firefox 1.5.0.1.
+
+== SearchBox Sync 0.3.5 (Jan. 21st, 2006) ==
+
+ * Added: After an update, the user is now asked if he/she wants to reset the default synchronization rules.
+ * Improved: The "Reset" button now doesn't delete custom rules.
+ * Improved: Some synchronization rules were improved.
+ * New translations: Polish, Russian, Slovak
+
+== SearchBox Sync 0.3.2 (Jan. 3rd, 2006) ==
+
+ * New translation: Japanese
+
+== SearchBox Sync 0.3.1 (Jan. 2nd, 2006) ==
+
+ * Fixed: There was an error in some regular expressions for the default synchronization rules.
+
+== SearchBox Sync 0.3 (Jan. 2nd, 2006) ==
+
+ * Added: You can add more than one search engine (synchronization rule). These rules are saved in a RDF file in your profile directory.
+ * Added: There is now a "simple" synchronization rule to easily add custom rules.
+ * Added: Before to add or modify a rule you can now test it with a URL.
+ * Improved: For Regular Expression rules, it's now the last group of the expression that is taken to extract the keywords.
+ * Improved: The description in the Extensions Manager is now localized.
+ * Fixed: There was a META-INF folder in the XPI file.
+ * New translations: Spanish
+ * Missing translation: Japanese
+
+== SearchBox Sync 0.2.2 (Dec. 18, 2005) ==
+
+ * New translation: Japanese
+
+== SearchBox Sync 0.2.1 (Nov. 8, 2005) ==
+
+ * The version 0.2 didn't work with Firefox 1.0.
+
+== SearchBox Sync 0.2 (Nov. 7, 2005) ==
+
+ * This version is compatible with Firefox 1.5.
+ * The name of this extension is changed.
+
+== SearchBox AutoUpdater 0.1.5 (Oct. 7, 2005) ==
+
+ * This version is compatible with Firefox 1.5.
+
+== SearchBox AutoUpdater 0.1.4 (Sept. 8, 2005) ==
+
+ * This version is compatible with Firefox 1.5.
+
+== SearchBox AutoUpdater 0.1.3.2 (Jun. 22, 2005) ==
+
+ * New translation: German
+
+== SearchBox AutoUpdater 0.1.3.1 (Jun. 15, 2005) ==
+
+ * New translation: Italian
+
+== SearchBox AutoUpdater 0.1.3 (May. 31, 2005) ==
+
+ * This version is compatible with Firefox 1.1.
+
+== SearchBox AutoUpdater 0.1.2 (Mar. 11, 2005) ==
+
+ * Improved: This extension now only works with Google. However, you can change the regular expression to use another search engine.
+
+== SearchBox AutoUpdater 0.1.1 (Jan. 4, 2005) ==
+
+ * Fixed: Try to solve the random crash on page load. [Didn't work...]
+
+== SearchBox AutoUpdater 0.1 (Oct. 18, 2004) ==
+
+ * First Release
