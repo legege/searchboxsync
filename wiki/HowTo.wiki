@@ -1,4 +1,5 @@
 #summary FAQ
+#labels Featured
 
 = FAQ =
 
