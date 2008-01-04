@@ -1,0 +1,31 @@
+<!ENTITY pref.title "Opções">
+<!ENTITY pref.rulesDefinition.label "Regras de sincronização">
+<!ENTITY pref.addRule.label "Adicionar...">
+<!ENTITY pref.addRule.accesskey "d">
+<!ENTITY pref.editRule.label "Editar...">
+<!ENTITY pref.editRule.accesskey "e">
+<!ENTITY pref.removeRule.label "Remover">
+<!ENTITY pref.removeRule.accesskey "m">
+<!ENTITY pref.moveUpRule.label "Para cima">
+<!ENTITY pref.moveUpRule.accesskey "c">
+<!ENTITY pref.moveDownRule.label "Para baixo">
+<!ENTITY pref.moveDownRule.accesskey "b">
+<!ENTITY pref.reset.label "Redefinir">
+<!ENTITY pref.reset.accesskey "r">
+<!ENTITY rule.title "Regra">
+<!ENTITY rule.addTitle "Adicione uma regra">
+<!ENTITY rule.editTitle "Edite a regra">
+<!ENTITY rule.settings.label "Configurações">
+<!ENTITY rule.name.label "Nome:">
+<!ENTITY rule.disabled.label "Desabilitar esta regra">
+<!ENTITY rule.type.label "Tipo de regra:">
+<!ENTITY rule.type.simple.label "Simples">
+<!ENTITY rule.type.regex.label "Expressão Regular">
+<!ENTITY rule.ruleDefinition.label "Definição da regra">
+<!ENTITY rule.simpleUrl.label "URL começa com:">
+<!ENTITY rule.simpleParameter.label "Nome dos parâmetros das palavras-chave">
+<!ENTITY rule.regexUrl.label "URL RegEx:">
+<!ENTITY rule.testing.label "Teste">
+<!ENTITY rule.testUrl.label "URL de teste:">
+<!ENTITY rule.test.label "Testar">
+<!ENTITY rule.test.accesskey "t">

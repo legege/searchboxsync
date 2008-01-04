@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/"?>
+
+<!DOCTYPE window [
+<!ENTITY % brandDTD SYSTEM "chrome://global/locale/brand.dtd" >
+%brandDTD;
+<!ENTITY % prefDTD SYSTEM "chrome://searchboxsync/locale/searchboxsync.dtd" >
+%prefDTD;
+]>
+
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - Version: MPL 1.1
+   -
+   - The contents of this file are subject to the Mozilla Public License Version
+   - 1.1 (the "License"); you may not use this file except in compliance with
+   - the License. You may obtain a copy of the License at
+   - http://www.mozilla.org/MPL/
+   -
+   - Software distributed under the License is distributed on an "AS IS" basis,
+   - WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+   - for the specific language governing rights and limitations under the
+   - License.
+   -
+   - The Original Code is SearchBox Sync.
+   -
+   - The Initial Developer of the Original Code is 
+   -  Georges-Etienne Legendre <legege@legege.com> <http://legege.com>.
+   - Portions created by the Initial Developer are Copyright (C) 2004-2008.
+   - All Rights Reserved.
+   -
+   - ***** END LICENSE BLOCK ***** -->
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="searchboxsyncRule"
+        title="&rule.title;"
+        onload="searchboxsync.options.RuleDialog.onLoad();"
+        ondialogaccept="return searchboxsync.options.RuleDialog.onAccept();"
+        ondialoghelp="searchboxsync.options.RuleDialog.onHelp();"
+        buttons="accept, cancel, help"
+        flex="1">
+
+  <script type="application/x-javascript" src="chrome://@NAME@/content/package-info.js" />
+  <script type="application/x-javascript" src="chrome://@NAME@/content/ecl.js" />
+  <script type="application/x-javascript" src="chrome://@NAME@/content/version.js" />
+  <script type="application/x-javascript" src="chrome://@NAME@/content/util.js" />
+  <script type="application/x-javascript" src="chrome://@NAME@/content/preferences.js" />
+  <script type="application/x-javascript" src="chrome://@NAME@/content/ruleService.js" />
+
+  <script type="application/x-javascript" src="chrome://@NAME@/content/options/package-info.js" />
+  <script type="application/x-javascript" src="chrome://@NAME@/content/options/ruleDialog.js" />
+
+  <stringbundle id="bundle-searchboxsync" src="chrome://@NAME@/locale/searchboxsync.properties"/>
+
+  <groupbox>
+    <caption>
+      <label value="&rule.settings.label;" />
+    </caption>
+
+    <grid>
+      <columns>
+        <column />
+        <column flex="1" />
+      </columns>
+      <rows>
+        <row align="center">
+          <label control="name" value="&rule.name.label;" />
+          <textbox id="name" />
+        </row>
+        <row align="center">
+          <label control="name" value="&rule.type.label;" />
+          <radiogroup id="type" flex="1"
+                      oncommand="searchboxsync.options.RuleDialog.onTypeSelect();"
+                      orient="horizontal">
+            <radio id="simpleRule" label="&rule.type.simple.label;" value="simple" />
+            <radio id="regexRule" label="&rule.type.regex.label;" value="regex" />
+          </radiogroup>
+        </row>
+      </rows>
+    </grid>
+
+    <checkbox id="disabledCheckbox" label="&rule.disabled.label;" />
+  </groupbox>
+
+  <groupbox style="min-width: 420px;">
+    <caption>
+      <label value="&rule.ruleDefinition.label;" />
+    </caption>
+
+    <grid id="simpleDefinition" hidefor="regex">
+      <columns>
+        <column />
+        <column flex="1" />
+      </columns>
+      <rows>
+        <row align="center">
+          <label control="simpleUrl" value="&rule.simpleUrl.label;" />
+          <textbox id="simpleUrl" flex="1" />
+        </row>
+        <row align="center">
+          <label control="simpleParameter" value="&rule.simpleParameter.label;" />
+          <textbox id="simpleParameter" flex="1" />
+        </row>
+      </rows>
+    </grid>
+
+    <grid id="regexDefinition" hidefor="simple">
+      <columns>
+        <column />
+        <column flex="1" />
+      </columns>
+      <rows>
+        <row align="center">
+          <label control="regexUrl" value="&rule.regexUrl.label;" />
+          <textbox id="regexUrl" flex="1" />
+        </row>
+      </rows>
+    </grid>
+
+    <separator />
+
+    <hbox align="center" flex="1">
+      <label control="testUrl" value="&rule.testUrl.label;" />
+      <textbox id="testUrl" flex="1" />
+      <button label="&rule.test.label;"  accesskey="&rule.test.accesskey;"
+              oncommand="searchboxsync.options.RuleDialog.testRule();" />
+    </hbox>
+  </groupbox>
+
+</dialog>
