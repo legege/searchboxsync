@@ -1,6 +1,11 @@
 #summary Change Log
 #labels Featured
 
+== !SearchBox Sync 1.0 (January 4th, 2008) ==
+
+ * Compatibility for Firefox 3.0
+ * Source code has been restructured for better readability.
+
 == !SearchBox Sync 0.4.2 (November 23rd, 2006) ==
 
  * Added: Encoding EUC, JIS, Shift JIS, JIS-7bit and JIS-8bit are now supported (Thanks to Fuku)
