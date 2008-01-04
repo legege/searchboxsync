@@ -105,7 +105,7 @@ searchboxsync.options.OptionsDialog = new function() {
     var args = {rule: aRule, result: false};
 
     window.openDialog("chrome://searchboxsync/content/options/ruleDialog.xul", "@NAME@:rule",
-        "chrome,titlebar,modal,centerscreen,resizable=yes", args);
+        "chrome,titlebar,modal,centerscreen,resizable=no", args);
 
     if (args.result) {
       refreshRulesList(args.rule.key, true);

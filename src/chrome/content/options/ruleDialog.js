@@ -133,7 +133,11 @@ searchboxsync.options.RuleDialog = new function() {
       else {
         control.removeAttribute("hidden");
       }
-      window.sizeToContent();
+
+      try {
+        window.sizeToContent();
+      }
+      catch(e) {}
     }
   }
 
