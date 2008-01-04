@@ -11,14 +11,16 @@
  * for the specific language governing rights and limitations under the
  * License.
  *
- * The Original Code is SearchBox Sync.
- *
- * The Initial Developer of the Original Code is 
- *  Georges-Etienne Legendre <legege@legege.com> <http://legege.com>.
- * Portions created by the Initial Developer are Copyright (C) 2004-2008.
+ * The Original Code is SearchWP.
+
+ * The Initial Developer of the Original Code is Georges-Etienne Legendre.
+ * Portions created by Georges-Etienne Legendre are Copyright (C) 2004-2007.
  * All Rights Reserved.
+ *
+ * Contributor(s):
+ *  Georges-Etienne Legendre <legege@legege.com> <http://legege.com>
  *
  * ***** END LICENSE BLOCK ***** */
 
-pref("extensions.@ID@.description", "chrome://@NAME@/locale/searchboxsync.properties");
-pref("extensions.searchboxsync.version", "0");
+if (!this.searchboxsync) this.searchboxsync = {};
+if (!this.searchboxsync.options) this.searchboxsync.options = {};

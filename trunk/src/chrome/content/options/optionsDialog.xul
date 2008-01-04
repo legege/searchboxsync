@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/"?>
+
+<!DOCTYPE window [
+<!ENTITY % brandDTD SYSTEM "chrome://global/locale/brand.dtd" >
+%brandDTD;
+<!ENTITY % prefDTD SYSTEM "chrome://searchboxsync/locale/searchboxsync.dtd" >
+%prefDTD;
+]>
+
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - Version: MPL 1.1
+   -
+   - The contents of this file are subject to the Mozilla Public License Version
+   - 1.1 (the "License"); you may not use this file except in compliance with
+   - the License. You may obtain a copy of the License at
+   - http://www.mozilla.org/MPL/
+   -
+   - Software distributed under the License is distributed on an "AS IS" basis,
+   - WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+   - for the specific language governing rights and limitations under the
+   - License.
+   -
+   - The Original Code is SearchBox Sync.
+   -
+   - The Initial Developer of the Original Code is 
+   -  Georges-Etienne Legendre <legege@legege.com> <http://legege.com>.
+   - Portions created by the Initial Developer are Copyright (C) 2004-2008.
+   - All Rights Reserved.
+   -
+   - ***** END LICENSE BLOCK ***** -->
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="searchboxsyncPref"
+        title="&pref.title;" buttons="accept"
+        onload="searchboxsync.options.OptionsDialog.onLoad();"
+        ondialogaccept="return searchboxsync.options.OptionsDialog.onAccept();">
+
+  <script type="application/x-javascript" src="chrome://@NAME@/content/package-info.js" />
+  <script type="application/x-javascript" src="chrome://@NAME@/content/ecl.js" />
+  <script type="application/x-javascript" src="chrome://@NAME@/content/version.js" />
+  <script type="application/x-javascript" src="chrome://@NAME@/content/util.js" />
+  <script type="application/x-javascript" src="chrome://@NAME@/content/preferences.js" />
+  <script type="application/x-javascript" src="chrome://@NAME@/content/ruleService.js" />
+
+  <script type="application/x-javascript" src="chrome://@NAME@/content/options/package-info.js" />
+  <script type="application/x-javascript" src="chrome://@NAME@/content/options/optionsDialog.js" />
+
+  <stringbundle id="bundle-searchboxsync" src="chrome://@NAME@/locale/searchboxsync.properties"/>
+
+  <groupbox>
+    <caption label="&pref.rulesDefinition.label;" />
+    <hbox>
+      <listbox id="rulesList" flex="1"
+               onselect="searchboxsync.options.OptionsDialog.onSelectionChanged(event);"
+               ondblclick="searchboxsync.options.OptionsDialog.onEditRule(event);" />
+      <vbox>
+        <button label="&pref.addRule.label;"
+                accesskey="&pref.addRule.accesskey;"
+                oncommand="searchboxsync.options.OptionsDialog.onAddRule();" />
+        <button label="&pref.editRule.label;"
+                accesskey="&pref.editRule.accesskey;"
+                oncommand="searchboxsync.options.OptionsDialog.onEditRule();" />
+        <button label="&pref.removeRule.label;"
+                accesskey="&pref.removeRule.accesskey;"
+                oncommand="searchboxsync.options.OptionsDialog.onDeleteRule();" />
+        <separator />
+        <button label="&pref.moveUpRule.label;"
+                accesskey="&pref.moveUpRule.accesskey;"
+                oncommand="searchboxsync.options.OptionsDialog.onMoveUp();" />
+        <button label="&pref.moveDownRule.label;"
+                accesskey="&pref.moveDownRule.accesskey;"
+                oncommand="searchboxsync.options.OptionsDialog.onMoveDown();" />
+        <separator />
+        <button label="&pref.reset.label;"
+                accesskey="&pref.reset.accesskey;"
+                oncommand="searchboxsync.options.OptionsDialog.onReset();" />
+      </vbox>
+    </hbox>
+  </groupbox>
+</dialog>

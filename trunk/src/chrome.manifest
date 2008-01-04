@@ -1,5 +1,5 @@
 content @NAME@ jar:chrome/@NAME@.jar!/content/
-overlay chrome://browser/content/browser.xul chrome://@NAME@/content/overlay.xul
+skin @NAME@ classic/1.0 jar:chrome/@NAME@.jar!/skin/classic/
 locale @NAME@ de jar:chrome/@NAME@.jar!/locale/de/
 locale @NAME@ en jar:chrome/@NAME@.jar!/locale/en/
 locale @NAME@ es-ES jar:chrome/@NAME@.jar!/locale/es-ES/
@@ -13,4 +13,5 @@ locale @NAME@ ru jar:chrome/@NAME@.jar!/locale/ru/
 locale @NAME@ sk jar:chrome/@NAME@.jar!/locale/sk/
 locale @NAME@ zh-CN jar:chrome/@NAME@.jar!/locale/zh-CN/
 locale @NAME@ zh-TW jar:chrome/@NAME@.jar!/locale/zh-TW/
-skin @NAME@ classic/1.0 jar:chrome/@NAME@.jar!/skin/classic/
+
+overlay chrome://browser/content/browser.xul chrome://@NAME@/content/overlay.xul
