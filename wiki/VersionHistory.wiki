@@ -1,6 +1,11 @@
 #summary Change Log
 #labels Featured
 
+
+== !SearchBox Sync 1.0.1 (January 4th, 2008) ==
+
+ * Default synchronization rules have been updated: Google, Yahoo, Microsoft Live & MSN, Amazon, eBay, Wikipedia, del.icio.us, Flickr, YouTube, MySpace, Facebook, Mozilla Add-ons, SourceForge.net.
+
 == !SearchBox Sync 1.0 (January 4th, 2008) ==
 
  * Compatibility for Firefox 3.0
