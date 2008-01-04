@@ -1,14 +1,40 @@
 <?xml version="1.0"?>
 
-<overlay id="searchboxsyncOverlay"
-  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - Version: MPL 1.1
+   -
+   - The contents of this file are subject to the Mozilla Public License Version
+   - 1.1 (the "License"); you may not use this file except in compliance with
+   - the License. You may obtain a copy of the License at
+   - http://www.mozilla.org/MPL/
+   -
+   - Software distributed under the License is distributed on an "AS IS" basis,
+   - WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+   - for the specific language governing rights and limitations under the
+   - License.
+   -
+   - The Original Code is SearchBox Sync.
+   -
+   - The Initial Developer of the Original Code is 
+   -  Georges-Etienne Legendre <legege@legege.com> <http://legege.com>.
+   - Portions created by the Initial Developer are Copyright (C) 2004-2008.
+   - All Rights Reserved.
+   -
+   - ***** END LICENSE BLOCK ***** -->
+
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="searchboxsyncOverlay">
 
   <stringbundleset id="stringbundleset">
-    <stringbundle id="bundle_searchboxsync" src="chrome://searchboxsync/locale/searchboxsync.properties" />
+    <stringbundle id="bundle-searchboxsync" src="chrome://@NAME@/locale/searchboxsync.properties" />
   </stringbundleset>
 
-  <script type="application/x-javascript" src="chrome://searchboxsync/content/global.js" />
-  <script type="application/x-javascript" src="chrome://searchboxsync/content/overlay.js" />
-  <script type="application/x-javascript" src="chrome://searchboxsync/content/ecl.js" />
+  <script type="application/x-javascript" src="chrome://@NAME@/content/package-info.js" />
+  <script type="application/x-javascript" src="chrome://@NAME@/content/ecl.js" />
+  <script type="application/x-javascript" src="chrome://@NAME@/content/version.js" />
+  <script type="application/x-javascript" src="chrome://@NAME@/content/util.js" />
+  <script type="application/x-javascript" src="chrome://@NAME@/content/preferences.js" />
+  <script type="application/x-javascript" src="chrome://@NAME@/content/ruleService.js" />
+
+  <script type="application/x-javascript" src="chrome://@NAME@/content/overlay.js" />
 
 </overlay>
