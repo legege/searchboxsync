@@ -59,8 +59,10 @@ searchboxsync.Overlay = new function() {
    * to reset the default synchronization rules.
    */
   this.checkDefaultRules = function() {
-    if (searchboxsync.Preferences.version == 0) {
+
+    if (searchboxsync.Preferences.version == "0") {
       searchboxsync.Preferences.version = SEARCHBOXSYNC_VERSION;
+      searchboxsync.RuleService.reset(true);
     }
 
     if (SEARCHBOXSYNC_VERSION > searchboxsync.Preferences.version) {

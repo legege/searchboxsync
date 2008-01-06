@@ -162,7 +162,7 @@ searchboxsync.RuleService = new function() {
       var res = children.getNext();
       if (res instanceof Components.interfaces.nsIRDFResource) {
         var source = rdfUtil.readAttribute(this.rdfDatasource, res,
-                                                "http://legege.com/rdf#source");
+                                           "http://legege.com/rdf#source");
         if (!aPackageOnly || aPackageOnly && source == "package") {
           rdfUtil.removeAttributes(this.rdfDatasource, res);
           rdfContainer.RemoveElement(res, false);
