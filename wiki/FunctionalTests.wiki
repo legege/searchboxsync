@@ -1,0 +1,34 @@
+#summary Describe a list of functional tests for this extension
+
+(Work in progress...)
+
+=== Test: Clean install have default sync rules defined ===
+ # Create a new profile
+ # Install the extension
+ # Validate that synchronization rules are correctly defined.
+
+=== Test: Update with modification in default sync rules ===
+ # Install the previous version of this extension
+ # Create a custom sync rule
+ # Install the a newer version of this extension
+ # When prompted to reset the default sync rules, answer yes
+ # Validate that the custom sync rule is as previously defined and that default rules have been updated
+
+=== Test: Default sync rules are working properly ===
+
+ # Google:
+   # http://www.google.com
+   # http://www.google.com/codesearch
+   # Custom Search Engine: pick one here http://www.google.com/coop/cse/examples/GooglePicks
+
+ # Amazon:
+   # http://www.amazon.ca
+   # http://amazon.ca
+   # http://www.amazon.co.uk
+   # http://www.amazon.com
+
+ # Yahoo:
+   # http://search.yahoo.com
+   # http://images.search.yahoo.com
+
+To be continued... (encoding, ...)
