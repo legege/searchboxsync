@@ -1,0 +1,31 @@
+<!ENTITY pref.title "Options">
+<!ENTITY pref.rulesDefinition.label "Règles de synchronisation">
+<!ENTITY pref.addRule.label "Ajouter...">
+<!ENTITY pref.addRule.accesskey "a">
+<!ENTITY pref.editRule.label "Modifier...">
+<!ENTITY pref.editRule.accesskey "m">
+<!ENTITY pref.removeRule.label "Supprimer">
+<!ENTITY pref.removeRule.accesskey "p">
+<!ENTITY pref.moveUpRule.label "Monter">
+<!ENTITY pref.moveUpRule.accesskey "m">
+<!ENTITY pref.moveDownRule.label "Descendre">
+<!ENTITY pref.moveDownRule.accesskey "d">
+<!ENTITY pref.reset.label "Règles par défaut">
+<!ENTITY pref.reset.accesskey "r">
+<!ENTITY rule.title "Règle">
+<!ENTITY rule.addTitle "Ajouter une règle">
+<!ENTITY rule.editTitle "Modifier une règle">
+<!ENTITY rule.settings.label "Paramètres">
+<!ENTITY rule.name.label "Nom :">
+<!ENTITY rule.disabled.label "Désactiver cette règle">
+<!ENTITY rule.type.label "Type de règle :">
+<!ENTITY rule.type.simple.label "Simple">
+<!ENTITY rule.type.regex.label "Expression régulière">
+<!ENTITY rule.ruleDefinition.label "Définition de la règle">
+<!ENTITY rule.simpleUrl.label "Adresse URL débutant par :">
+<!ENTITY rule.simpleParameter.label "Nom du paramètre source :">
+<!ENTITY rule.regexUrl.label "RegEx URL :">
+<!ENTITY rule.testing.label "Vérification">
+<!ENTITY rule.testUrl.label "Adresse URL de vérification :">
+<!ENTITY rule.test.label "Vérifier">
+<!ENTITY rule.test.accesskey "v">
