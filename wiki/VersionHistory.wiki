@@ -1,6 +1,10 @@
 #summary Change Log
 #labels Featured
 
+== !SearchBox Sync 1.0.3 (January 7th, 2008) ==
+
+ * Fixed: Same as version 1.0.2. The fix was not working for Firefox 2.0.
+
 == !SearchBox Sync 1.0.2 (January 5th, 2008) ==
 
  * Fixed: Default synchronization rules were not installed if the extension was installed for the first time.
