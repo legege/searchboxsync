@@ -80,7 +80,7 @@ searchboxsync.options.RuleDialog = new function() {
     }
 
     if (rule == null) {
-      rule = new searchboxsync.RuleService.Rule();
+      rule = new searchboxsync.Rule();
     }
 
     rule = setRuleValues(rule);
@@ -145,7 +145,7 @@ searchboxsync.options.RuleDialog = new function() {
    * This method test the current rule.
    */
   this.testRule = function() {
-    var rule = setRuleValues(new searchboxsync.RuleService.Rule());
+    var rule = setRuleValues(new searchboxsync.Rule());
     var regex = searchboxsync.RuleService.makeUrlRegex(rule);
     var url = testUrl.value;
     var terms = searchboxsync.Util.extractTerms(regex, url);
