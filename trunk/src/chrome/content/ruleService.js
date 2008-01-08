@@ -177,7 +177,7 @@ searchboxsync.RuleService = new function() {
   }
 
   this.getRuleByKey = function(aKey) {
-    var rule = new searchboxsync.RuleService.Rule();
+    var rule = new searchboxsync.Rule();
 
     var res = rs.GetResource("rdf:#$" + aKey);
 
@@ -224,49 +224,49 @@ searchboxsync.RuleService = new function() {
   }
 
   this.addDefaultRules = function() {
-    rule = new searchboxsync.RuleService.Rule();
+    rule = new searchboxsync.Rule();
     rule.name = "Google";
     rule.type = "regex";
     rule.source = "package";
     rule.regex.url = "^http[s]?://([^.]+\\.)?google\\.([a-z]+\\.?)+/[^?/]*\\?(.*&)?(as_)?q=([^&]+)";
     this.addUpdateRule(rule);
 
-    rule = new searchboxsync.RuleService.Rule();
+    rule = new searchboxsync.Rule();
     rule.name = "Yahoo!";
     rule.type = "regex";
     rule.source = "package";
     rule.regex.url = "^http[s]?://([^.]+\\.)?search\\.yahoo\\.([a-z]+\\.?)+/[^?/]*\\?(.*&)?p=([^&]+)";
     this.addUpdateRule(rule);
 
-    rule = new searchboxsync.RuleService.Rule();
+    rule = new searchboxsync.Rule();
     rule.name = "Microsoft Live & MSN";
     rule.type = "regex";
     rule.source = "package";
     rule.regex.url = "^http[s]?://search\\.((live)|(msn))\\.([a-z]+\\.?)+/results\\.asp[x]?\\?(.*&)?q=([^&]+)";
     this.addUpdateRule(rule);
 
-    rule = new searchboxsync.RuleService.Rule();
+    rule = new searchboxsync.Rule();
     rule.name = "Amazon";
     rule.type = "regex";
     rule.source = "package";
     rule.regex.url = "^http[s]?://(www\\.)?amazon\\.([a-z]+\\.?)+/s/ref=[\\w]+(/[\\d-]*)?\\?(.*&)?field-keywords=([^&]+)";
     this.addUpdateRule(rule);
 
-    rule = new searchboxsync.RuleService.Rule();
+    rule = new searchboxsync.Rule();
     rule.name = "eBay";
     rule.type = "regex";
     rule.source = "package";
     rule.regex.url = "^http[s]?://search\\.ebay\\.([a-z]+\\.?)+/search/search\\.dll\\?(.*&)?satitle=([^&]+)";
     this.addUpdateRule(rule);
 
-    rule = new searchboxsync.RuleService.Rule();
+    rule = new searchboxsync.Rule();
     rule.name = "Wikipedia";
     rule.type = "regex";
     rule.source = "package";
     rule.regex.url = "^http[s]?://[^.]{2,3}\\.wikipedia\\.org/wiki/Special:Search\\?(.*&)?search=([^&]+)";
     this.addUpdateRule(rule);
 
-    rule = new searchboxsync.RuleService.Rule();
+    rule = new searchboxsync.Rule();
     rule.name = "del.icio.us";
     rule.type = "simple";
     rule.source = "package";
@@ -274,7 +274,7 @@ searchboxsync.RuleService = new function() {
     rule.simple.parameter = "p";
     this.addUpdateRule(rule);
 
-    rule = new searchboxsync.RuleService.Rule();
+    rule = new searchboxsync.Rule();
     rule.name = "Flickr";
     rule.type = "simple";
     rule.source = "package";
@@ -282,21 +282,21 @@ searchboxsync.RuleService = new function() {
     rule.simple.parameter = "q";
     this.addUpdateRule(rule);
 
-    rule = new searchboxsync.RuleService.Rule();
+    rule = new searchboxsync.Rule();
     rule.name = "YouTube";
     rule.type = "regex";
     rule.source = "package";
     rule.regex.url = "^http[s]?://([^.]+\\.)?youtube\\.([a-z]+\\.?)+/results\\?(.*&)?search_query=([^&]+)";
     this.addUpdateRule(rule);
 
-    rule = new searchboxsync.RuleService.Rule();
+    rule = new searchboxsync.Rule();
     rule.name = "MySpace";
     rule.type = "regex";
     rule.source = "package";
     rule.regex.url = "^http[s]?://searchservice\\.myspace\\.com/[^?/]*\\?(.*&)?f_search_criteria=([^&]+)";
     this.addUpdateRule(rule);
 
-    rule = new searchboxsync.RuleService.Rule();
+    rule = new searchboxsync.Rule();
     rule.name = "Facebook";
     rule.type = "simple";
     rule.source = "package";
@@ -304,14 +304,14 @@ searchboxsync.RuleService = new function() {
     rule.simple.parameter = "q";
     this.addUpdateRule(rule);
 
-    rule = new searchboxsync.RuleService.Rule();
+    rule = new searchboxsync.Rule();
     rule.name = "Mozilla Add-ons";
     rule.type = "regex";
     rule.source = "package";
     rule.regex.url = "^http[s]?://addons\\.mozilla\\.org/[\\w-]+/[\\w]+/search\\?(.*&)?q=([^&]+)";
     this.addUpdateRule(rule);
 
-    rule = new searchboxsync.RuleService.Rule();
+    rule = new searchboxsync.Rule();
     rule.name = "SourceForge.net";
     rule.type = "simple";
     rule.source = "package";
@@ -341,7 +341,7 @@ searchboxsync.RuleService = new function() {
   }
 
   function readRuleFromResource(aResource) {
-    var rule = new searchboxsync.RuleService.Rule();
+    var rule = new searchboxsync.Rule();
 
     rule.key = aResource.Value.replace("rdf:#$", "");
 
@@ -390,17 +390,5 @@ searchboxsync.RuleService = new function() {
   this.onUnload = function(aEvent) {
     rulesCacheObserver.unregister();
   };
-}
 
-/**
- * The representation of a synchronization rule.
- */
-searchboxsync.RuleService.Rule = function() {
-  this.key = null;
-  this.name = null;
-  this.type = null;
-  this.source = "user";
-  this.disabled = false;
-  this.simple = {url: "", parameter: ""};
-  this.regex = {url: ""};
 }
