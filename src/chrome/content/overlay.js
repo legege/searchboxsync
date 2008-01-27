@@ -107,6 +107,11 @@ searchboxsync.Overlay = new function() {
         if (terms && terms != "") {
           this.searchbar.removeAttribute("empty");
           this.searchbox.value = terms;
+
+          var evt = document.createEvent("Events");
+          evt.initEvent("oninput", true, true);
+          this.searchbar.dispatchEvent(evt);
+
           break;
         }
       }
