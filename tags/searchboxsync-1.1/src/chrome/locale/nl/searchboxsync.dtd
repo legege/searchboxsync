@@ -1,0 +1,31 @@
+<!ENTITY pref.title "Opties">
+<!ENTITY pref.rulesDefinition.label "Synchronisatieregels">
+<!ENTITY pref.addRule.label "Toevoegen...">
+<!ENTITY pref.addRule.accesskey "T">
+<!ENTITY pref.editRule.label "Aanpassen...">
+<!ENTITY pref.editRule.accesskey "A">
+<!ENTITY pref.removeRule.label "Verwijderen">
+<!ENTITY pref.removeRule.accesskey "V">
+<!ENTITY pref.moveUpRule.label "Omhoog verplaatsen">
+<!ENTITY pref.moveUpRule.accesskey "O">
+<!ENTITY pref.moveDownRule.label "Omlaag verplaatsen">
+<!ENTITY pref.moveDownRule.accesskey "m">
+<!ENTITY pref.reset.label "Herstellen">
+<!ENTITY pref.reset.accesskey "H">
+<!ENTITY rule.title "Regel">
+<!ENTITY rule.addTitle "Regel toevoegen">
+<!ENTITY rule.editTitle "Regel aanpassen">
+<!ENTITY rule.settings.label "Voorkeuren">
+<!ENTITY rule.name.label "Naam:">
+<!ENTITY rule.disabled.label "Deze regel uitschakelen">
+<!ENTITY rule.type.label "Type:">
+<!ENTITY rule.type.simple.label "Simpel">
+<!ENTITY rule.type.regex.label "Reguliere Expressie">
+<!ENTITY rule.ruleDefinition.label "Definitie">
+<!ENTITY rule.simpleUrl.label "URL adres begint met:">
+<!ENTITY rule.simpleParameter.label "Parameternaam voor de zoektermen:">
+<!ENTITY rule.regexUrl.label "URL RegEx:">
+<!ENTITY rule.testing.label "Bezig met testen">
+<!ENTITY rule.testUrl.label "Test URL:">
+<!ENTITY rule.test.label "Test">
+<!ENTITY rule.test.accesskey "T">
