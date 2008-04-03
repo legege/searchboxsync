@@ -1,0 +1,31 @@
+<!ENTITY pref.title "Options">
+<!ENTITY pref.rulesDefinition.label "Synchronization rules">
+<!ENTITY pref.addRule.label "Add...">
+<!ENTITY pref.addRule.accesskey "d">
+<!ENTITY pref.editRule.label "Edit...">
+<!ENTITY pref.editRule.accesskey "e">
+<!ENTITY pref.removeRule.label "Remove">
+<!ENTITY pref.removeRule.accesskey "m">
+<!ENTITY pref.moveUpRule.label "Move Up">
+<!ENTITY pref.moveUpRule.accesskey "u">
+<!ENTITY pref.moveDownRule.label "Move Down">
+<!ENTITY pref.moveDownRule.accesskey "d">
+<!ENTITY pref.reset.label "Reset">
+<!ENTITY pref.reset.accesskey "r">
+<!ENTITY rule.title "Rule">
+<!ENTITY rule.addTitle "Add a rule">
+<!ENTITY rule.editTitle "Edit rule">
+<!ENTITY rule.settings.label "Settings">
+<!ENTITY rule.name.label "Name:">
+<!ENTITY rule.disabled.label "Disable this rule">
+<!ENTITY rule.type.label "Rule type:">
+<!ENTITY rule.type.simple.label "Simple">
+<!ENTITY rule.type.regex.label "Regular Expression">
+<!ENTITY rule.ruleDefinition.label "Rule definition">
+<!ENTITY rule.simpleUrl.label "URL address begins with:">
+<!ENTITY rule.simpleParameter.label "Keywords parameter's name:">
+<!ENTITY rule.regexUrl.label "URL RegEx:">
+<!ENTITY rule.testing.label "Testing">
+<!ENTITY rule.testUrl.label "Test URL:">
+<!ENTITY rule.test.label "Test">
+<!ENTITY rule.test.accesskey "t">

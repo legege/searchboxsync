@@ -1,0 +1,31 @@
+<!ENTITY pref.title "選項">
+<!ENTITY pref.rulesDefinition.label "同步規則">
+<!ENTITY pref.addRule.label "新增...">
+<!ENTITY pref.addRule.accesskey "d">
+<!ENTITY pref.editRule.label "編輯...">
+<!ENTITY pref.editRule.accesskey "e">
+<!ENTITY pref.removeRule.label "移除">
+<!ENTITY pref.removeRule.accesskey "m">
+<!ENTITY pref.moveUpRule.label "向上移">
+<!ENTITY pref.moveUpRule.accesskey "u">
+<!ENTITY pref.moveDownRule.label "向下移">
+<!ENTITY pref.moveDownRule.accesskey "d">
+<!ENTITY pref.reset.label "重設">
+<!ENTITY pref.reset.accesskey "r">
+<!ENTITY rule.title "規則">
+<!ENTITY rule.addTitle "新增規則">
+<!ENTITY rule.editTitle "編輯規則">
+<!ENTITY rule.settings.label "設定">
+<!ENTITY rule.name.label "名稱:">
+<!ENTITY rule.disabled.label "停用此規則">
+<!ENTITY rule.type.label "規則類型:">
+<!ENTITY rule.type.simple.label "簡易型">
+<!ENTITY rule.type.regex.label "正規表示式">
+<!ENTITY rule.ruleDefinition.label "規則定義">
+<!ENTITY rule.simpleUrl.label "URL 起始字串:">
+<!ENTITY rule.simpleParameter.label "關鍵字參數名稱:">
+<!ENTITY rule.regexUrl.label "URL 表示式:">
+<!ENTITY rule.testing.label "測試中...">
+<!ENTITY rule.testUrl.label "測試 URL:">
+<!ENTITY rule.test.label "測試">
+<!ENTITY rule.test.accesskey "t">
