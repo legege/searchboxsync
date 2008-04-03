@@ -1,6 +1,10 @@
 #summary Change Log
 #labels Featured
 
+== !SearchBox Sync 1.1.1 (April 2nd, 2008) ==
+
+ * Improved: Compatibility for Firefox 3.0b5.
+
 == !SearchBox Sync 1.1.1 (March 12th, 2008) ==
 
  * Improved: Compatibility for Firefox 3.0b4.
