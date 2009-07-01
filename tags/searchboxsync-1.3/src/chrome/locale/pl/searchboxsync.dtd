@@ -1,0 +1,31 @@
+<!ENTITY pref.title "SearchBox Sync - opcje">
+<!ENTITY pref.rulesDefinition.label "Lista reguł synchronizacji">
+<!ENTITY pref.addRule.label "Dodaj">
+<!ENTITY pref.addRule.accesskey "d">
+<!ENTITY pref.editRule.label "Edytuj">
+<!ENTITY pref.editRule.accesskey "e">
+<!ENTITY pref.removeRule.label "Usuń">
+<!ENTITY pref.removeRule.accesskey "u">
+<!ENTITY pref.moveUpRule.label "Przesuń w górę">
+<!ENTITY pref.moveUpRule.accesskey "p">
+<!ENTITY pref.moveDownRule.label "Przesuń w dół">
+<!ENTITY pref.moveDownRule.accesskey "d">
+<!ENTITY pref.reset.label "Wyczyść">
+<!ENTITY pref.reset.accesskey "w">
+<!ENTITY rule.title "Reguła">
+<!ENTITY rule.addTitle "Dodawanie reguł">
+<!ENTITY rule.editTitle "Edytowanie reguł">
+<!ENTITY rule.settings.label "Właściwości">
+<!ENTITY rule.name.label "Nazwa:">
+<!ENTITY rule.disabled.label "Wyłącz tę regułę">
+<!ENTITY rule.type.label "Typ reguły:">
+<!ENTITY rule.type.simple.label "Prosty">
+<!ENTITY rule.type.regex.label "Wyrażenia regularne (RegExp)">
+<!ENTITY rule.ruleDefinition.label "Definicja reguły">
+<!ENTITY rule.simpleUrl.label "Adres URL reguły">
+<!ENTITY rule.simpleParameter.label "Nazwa parametru &quot;keywords&quot;">
+<!ENTITY rule.regexUrl.label "Adres URL wyrażenia regularnego">
+<!ENTITY rule.testing.label "Testowanie">
+<!ENTITY rule.testUrl.label "Adres URL testu">
+<!ENTITY rule.test.label "Testuj">
+<!ENTITY rule.test.accesskey "t">
