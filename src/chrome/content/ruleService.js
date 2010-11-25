@@ -239,84 +239,10 @@ searchboxsync.RuleService = new function() {
     this.addUpdateRule(rule);
 
     rule = new searchboxsync.Rule();
-    rule.name = "Microsoft Live & MSN";
-    rule.type = "regex";
-    rule.source = "package";
-    rule.regex.url = "^http[s]?://search\\.((live)|(msn))\\.([a-z]+\\.?)+/results\\.asp[x]?\\?(.*&)?q=([^&]+)";
-    this.addUpdateRule(rule);
-
-    rule = new searchboxsync.Rule();
     rule.name = "Amazon";
     rule.type = "regex";
     rule.source = "package";
     rule.regex.url = "^http[s]?://(www\\.)?amazon\\.([a-z]+\\.?)+/s/ref=[\\w]+(/[\\d-]*)?\\?(.*&)?field-keywords=([^&]+)";
-    this.addUpdateRule(rule);
-
-    rule = new searchboxsync.Rule();
-    rule.name = "eBay";
-    rule.type = "regex";
-    rule.source = "package";
-    rule.regex.url = "^http[s]?://search\\.ebay\\.([a-z]+\\.?)+/search/search\\.dll\\?(.*&)?satitle=([^&]+)";
-    this.addUpdateRule(rule);
-
-    rule = new searchboxsync.Rule();
-    rule.name = "Wikipedia";
-    rule.type = "regex";
-    rule.source = "package";
-    rule.regex.url = "^http[s]?://[^.]{2,3}\\.wikipedia\\.org/wiki/Special:Search\\?(.*&)?search=([^&]+)";
-    this.addUpdateRule(rule);
-
-    rule = new searchboxsync.Rule();
-    rule.name = "del.icio.us";
-    rule.type = "simple";
-    rule.source = "package";
-    rule.simple.url = "http://del.icio.us/search/";
-    rule.simple.parameter = "p";
-    this.addUpdateRule(rule);
-
-    rule = new searchboxsync.Rule();
-    rule.name = "Flickr";
-    rule.type = "simple";
-    rule.source = "package";
-    rule.simple.url = "http://www.flickr.com/search/";
-    rule.simple.parameter = "q";
-    this.addUpdateRule(rule);
-
-    rule = new searchboxsync.Rule();
-    rule.name = "YouTube";
-    rule.type = "regex";
-    rule.source = "package";
-    rule.regex.url = "^http[s]?://([^.]+\\.)?youtube\\.([a-z]+\\.?)+/results\\?(.*&)?search_query=([^&]+)";
-    this.addUpdateRule(rule);
-
-    rule = new searchboxsync.Rule();
-    rule.name = "MySpace";
-    rule.type = "regex";
-    rule.source = "package";
-    rule.regex.url = "^http[s]?://searchservice\\.myspace\\.com/[^?/]*\\?(.*&)?f_search_criteria=([^&]+)";
-    this.addUpdateRule(rule);
-
-    rule = new searchboxsync.Rule();
-    rule.name = "Facebook";
-    rule.type = "simple";
-    rule.source = "package";
-    rule.simple.url = "http://www.facebook.com/s.php";
-    rule.simple.parameter = "q";
-    this.addUpdateRule(rule);
-
-    rule = new searchboxsync.Rule();
-    rule.name = "Mozilla Add-ons";
-    rule.type = "regex";
-    rule.source = "package";
-    rule.regex.url = "^http[s]?://addons\\.mozilla\\.org/[\\w-]+/[\\w]+/search\\?(.*&)?q=([^&]+)";
-    this.addUpdateRule(rule);
-
-    rule = new searchboxsync.Rule();
-    rule.name = "SourceForge.net";
-    rule.type = "simple";
-    rule.source = "package";
-    rule.simple.url = "http://sourceforge.net/search/";
-    rule.simple.parameter = "words";
     this.addUpdateRule(rule);
   }
 
