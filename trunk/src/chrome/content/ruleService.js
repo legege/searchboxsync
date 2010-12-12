@@ -244,6 +244,13 @@ searchboxsync.RuleService = new function() {
     rule.source = "package";
     rule.regex.url = "^http[s]?://(www\\.)?amazon\\.([a-z]+\\.?)+/s/ref=[\\w]+(/[\\d-]*)?\\?(.*&)?field-keywords=([^&]+)";
     this.addUpdateRule(rule);
+
+    rule = new searchboxsync.Rule();
+    rule.name = "Bing";
+    rule.type = "regex";
+    rule.source = "package";
+    rule.regex.url = "^http://www\\.bing\\.com/([a-z]+/)*[^?/]*\\?(.*&)?q=([^&]+)";
+    this.addUpdateRule(rule);
   }
 
   function notifyRulesUpdate() {
