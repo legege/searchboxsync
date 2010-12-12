@@ -1,0 +1,31 @@
+<!ENTITY pref.title "SearchBox Sync設定">
+<!ENTITY pref.rulesDefinition.label "同期設定">
+<!ENTITY pref.addRule.label "追加">
+<!ENTITY pref.addRule.accesskey "d">
+<!ENTITY pref.editRule.label "編集">
+<!ENTITY pref.editRule.accesskey "e">
+<!ENTITY pref.removeRule.label "削除">
+<!ENTITY pref.removeRule.accesskey "m">
+<!ENTITY pref.moveUpRule.label "上に移動">
+<!ENTITY pref.moveUpRule.accesskey "u">
+<!ENTITY pref.moveDownRule.label "下に移動">
+<!ENTITY pref.moveDownRule.accesskey "d">
+<!ENTITY pref.reset.label "初期化">
+<!ENTITY pref.reset.accesskey "r">
+<!ENTITY rule.title "同期設定">
+<!ENTITY rule.addTitle "同期設定の追加">
+<!ENTITY rule.editTitle "同期設定の編集">
+<!ENTITY rule.settings.label "設定">
+<!ENTITY rule.name.label "登録名:">
+<!ENTITY rule.disabled.label "この同期設定を停止する。">
+<!ENTITY rule.type.label "同期方法:">
+<!ENTITY rule.type.simple.label "URL">
+<!ENTITY rule.type.regex.label "正規表現">
+<!ENTITY rule.ruleDefinition.label "同期設定の定義">
+<!ENTITY rule.simpleUrl.label "次を含むURLと同期:">
+<!ENTITY rule.simpleParameter.label "検索語句のパラメーター:">
+<!ENTITY rule.regexUrl.label "次の正規表現と同期:">
+<!ENTITY rule.testing.label "テスト中">
+<!ENTITY rule.testUrl.label "テスト URL:">
+<!ENTITY rule.test.label "テスト">
+<!ENTITY rule.test.accesskey "t">

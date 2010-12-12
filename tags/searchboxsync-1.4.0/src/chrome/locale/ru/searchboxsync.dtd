@@ -1,0 +1,31 @@
+<!ENTITY pref.title "Настройки">
+<!ENTITY pref.rulesDefinition.label "Правила синхронизации">
+<!ENTITY pref.addRule.label "Добавить...">
+<!ENTITY pref.addRule.accesskey "Д">
+<!ENTITY pref.editRule.label "Править...">
+<!ENTITY pref.editRule.accesskey "П">
+<!ENTITY pref.removeRule.label "Удалить">
+<!ENTITY pref.removeRule.accesskey "У">
+<!ENTITY pref.moveUpRule.label "Поднять">
+<!ENTITY pref.moveUpRule.accesskey "н">
+<!ENTITY pref.moveDownRule.label "Опустить">
+<!ENTITY pref.moveDownRule.accesskey "О">
+<!ENTITY pref.reset.label "Сбросить">
+<!ENTITY pref.reset.accesskey "б">
+<!ENTITY rule.title "Правило">
+<!ENTITY rule.addTitle "Добавить правило">
+<!ENTITY rule.editTitle "Редактрование правила">
+<!ENTITY rule.settings.label "Настройки">
+<!ENTITY rule.name.label "Название:">
+<!ENTITY rule.disabled.label "Выключить правило">
+<!ENTITY rule.type.label "Тип правила:">
+<!ENTITY rule.type.simple.label "Простое">
+<!ENTITY rule.type.regex.label "Использующее регулярные выражения">
+<!ENTITY rule.ruleDefinition.label "Определение правила">
+<!ENTITY rule.simpleUrl.label "Адрес сайта начинается с:">
+<!ENTITY rule.simpleParameter.label "Имя поля запроса:">
+<!ENTITY rule.regexUrl.label "RegEx адрес:">
+<!ENTITY rule.testing.label "Тестирование">
+<!ENTITY rule.testUrl.label "Тестируемый URL:">
+<!ENTITY rule.test.label "Тест">
+<!ENTITY rule.test.accesskey "Т">

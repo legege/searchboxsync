@@ -1,0 +1,31 @@
+<!ENTITY pref.title "Možnosti">
+<!ENTITY pref.rulesDefinition.label "Pravidlá synchronizácie">
+<!ENTITY pref.addRule.label "Pridať...">
+<!ENTITY pref.addRule.accesskey "d">
+<!ENTITY pref.editRule.label "Upraviť...">
+<!ENTITY pref.editRule.accesskey "e">
+<!ENTITY pref.removeRule.label "Zmazať">
+<!ENTITY pref.removeRule.accesskey "m">
+<!ENTITY pref.moveUpRule.label "Posunúť hore">
+<!ENTITY pref.moveUpRule.accesskey "u">
+<!ENTITY pref.moveDownRule.label "Posunúť dole">
+<!ENTITY pref.moveDownRule.accesskey "d">
+<!ENTITY pref.reset.label "Obnoviť">
+<!ENTITY pref.reset.accesskey "r">
+<!ENTITY rule.title "Pravidlo">
+<!ENTITY rule.addTitle "Pridať pravidlo">
+<!ENTITY rule.editTitle "Upraviť pravidlo">
+<!ENTITY rule.settings.label "Nastavenia">
+<!ENTITY rule.name.label "Názov:">
+<!ENTITY rule.disabled.label "Vypnúť toto pravidlo">
+<!ENTITY rule.type.label "Typ pravidla:">
+<!ENTITY rule.type.simple.label "Jednoduchý">
+<!ENTITY rule.type.regex.label "Regulárne výrazy">
+<!ENTITY rule.ruleDefinition.label "Definícia pravidla">
+<!ENTITY rule.simpleUrl.label "URL adresa začína s:">
+<!ENTITY rule.simpleParameter.label "Názov klávesovej skratky:">
+<!ENTITY rule.regexUrl.label "URL RegEx:">
+<!ENTITY rule.testing.label "Kontrola">
+<!ENTITY rule.testUrl.label "Overiť URL:">
+<!ENTITY rule.test.label "Overiť">
+<!ENTITY rule.test.accesskey "t">
