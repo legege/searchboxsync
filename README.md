@@ -1,10 +1,10 @@
 # SearchBox Sync
 
-SearchBox Sync is an add-on for Mozilla Firefox. It automatically updates the search bar with your search text whenever you search from a web page directly. The most common search engines (Google, Yahoo!, Live Search, YouTube, ...) are automatically synchronized, and custom rules can easily be added for those that are not detected.
+![Logo](/src/chrome/skin/classic/icon.png?raw=true) SearchBox Sync is an add-on for Mozilla Firefox. It automatically updates the search bar with your search text whenever you search from a web page directly. The most common search engines (Google, Yahoo!, Live Search, YouTube, ...) are automatically synchronized, and custom rules can easily be added for those that are not detected.
 
 If you like this add-on, you will probably want to try [SearchWP](https://github.com/legege/searchwp).
 
-More information on [Mozilla Modules](https://addons.mozilla.org/fr/firefox/addon/searchbox-sync/)
+More information on [Mozilla Add-ons](https://addons.mozilla.org/firefox/addon/searchbox-sync/)
 
 ## Key Features
 
