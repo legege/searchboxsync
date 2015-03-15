@@ -4,6 +4,9 @@
 
 If you like this add-on, you will probably want to try [SearchWP](https://github.com/legege/searchwp).
 
+![Sync rules](https://addons.cdn.mozilla.net/user-media/previews/full/3/3976.png?modified=1331247702)
+![Rule definition](https://addons.cdn.mozilla.net/user-media/previews/full/3/3975.png?modified=1331247702)
+
 More information on [Mozilla Add-ons](https://addons.mozilla.org/firefox/addon/searchbox-sync/)
 
 ## Key Features
