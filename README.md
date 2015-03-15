@@ -4,6 +4,8 @@ SearchBox Sync is an add-on for Mozilla Firefox. It automatically updates the se
 
 If you like this add-on, you will probably want to try [SearchWP](https://github.com/legege/searchwp).
 
+More information on [Mozilla Modules](https://addons.mozilla.org/fr/firefox/addon/searchbox-sync/)
+
 ## Key Features
 
  * Synchronize the search box content with any search engine or web site with a search form.
