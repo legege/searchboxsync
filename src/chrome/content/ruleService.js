@@ -249,7 +249,7 @@ searchboxsync.RuleService = new function() {
     rule.name = "Bing";
     rule.type = "regex";
     rule.source = "package";
-    rule.regex.url = "^http://www\\.bing\\.com/([a-z]+/)*[^?/]*\\?(.*&)?q=([^&]+)";
+    rule.regex.url = "^http[s]://www\\.bing\\.com/([a-z]+/)*[^?/]*\\?(.*&)?q=([^&]+)";
     this.addUpdateRule(rule);
   }
 
